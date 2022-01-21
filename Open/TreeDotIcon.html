@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Software</title>
+
+
+ <style type="text/css">
+
+  *{
+
+  margin: 0;
+  padding: 0;
+
+  }   
+
+ body{
+
+ background-color: skyblue;
+
+  }
+
+
+ .Head_part{
+  position: relative;
+  height: 42px;
+  width: 100%;
+  background-color: skyblue;
+  border: 2px solid skyblue;
+  border-radius: 3px ;
+  box-shadow: 1px 1px 4px 0px black;
+
+
+  }
+
+
+ .Body_part{
+ position: relative;
+ height: 500px;
+ width: 90%;
+ left: 5%;
+ background-color: skyblue;
+ top: 35px;
+ overflow: auto;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ padding-bottom: 20px;
+ box-sizing: border-box;
+
+
+
+   }
+
+
+
+ .Footer_part{
+ position: relative;
+ height: 40px;
+ width: 99%;
+ top: 0px;
+ border: 2px solid skyblue;
+ background-color: skyblue;
+ border-radius: 3px;
+
+   }
+
+
+ .Grammer{
+  position: relative;
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: green;
+  border-radius: 15px;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  text-decoration: none;
+  color: wheat;
+  top: 12px;
+  left: 5%;
+
+   }
+
+
+  .About{
+
+  position: relative; 
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  top: 12px;
+  left: 40%;
+
+   }
+
+ .Author{
+
+  position: relative;
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  text-decoration: none;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box; 
+  top: 12px;
+  left: 70%;
+
+   }
+
+
+
+ @media screen and (max-width:920px){
+
+  .About{
+  position: relative; 
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box; 
+  top: 12px;
+  left: 38%;
+
+   }
+
+ .Author{
+  position: relative;
+  left: 65%;
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  text-decoration: none;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;   
+  top: 12px;
+
+   }
+
+ 
+
+  }
+
+
+   
+ @media screen and (max-width:820px){
+
+ .Grammer{
+  position: relative;
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box; 
+  top: 12px;
+  left: 5%;
+
+   }
+
+
+  .About{
+  position: relative; 
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  border-radius: 15px;
+  text-decoration: none;
+  top: 12px;
+  left: 22%;
+
+   }
+
+
+
+
+ .Author{
+  position: relative;
+  left: 45%;
+  padding: 5px;
+  padding: 5px 15px;
+  background-color: orange;
+  text-decoration: none;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;   
+  top: 12px;
+
+   }
+
+ 
+
+  }
+
+
+
+
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+ }
+
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+  }
+
+
+
+
+.sidenav a:hover {
+  color: white;
+
+  }
+
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+ }
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+ }
+
+
+.DotIcon{
+position: relative;
+height: 12px;
+width:12px;
+background-color: green;
+margin-left: 50px;
+ }
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+<div class="Head_part">
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="Body_part">
+  
+
+
+
+<div class="">
+
+<span class="DotIcon"></span>
+<span class="DotIcon"></span>
+<span class="DotIcon"></span>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="Footer_part">
+
+  <a href="#" class="Grammer">Grammer</a>
+  <a href="#" class="About">About</a>
+    <a href="#" class="Author">Author</a>
+
+
+</div>
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  }
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  }
+
+
+</script>
+</body>
+</html>
