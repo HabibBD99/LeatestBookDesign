@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masala Book</title>
+
+	<style type="text/css">
+		
+  *{
+ margin: 0;
+ padding: 0;
+
+
+  }
+
+  body{
+ background-color: skyblue;
+
+
+  }
+
+
+
+ .Card{
+position:fixed;
+height: 600px;
+width: 100%;
+background-color:skyblue;
+margin-left: 0%;
+margin-top: 0px;
+border: 2px solid skyblue;
+border-radius: 3px ;
+
+
+
+  }
+
+  .Head_line{
+  position: relative;
+  height: 42px;
+  width: 100%;
+  background-color: skyblue;
+  border: 2px solid skyblue;
+  box-sizing:border-box;
+  border-radius: 2px;
+  box-shadow: 1px 1px 8px 0px black;
+
+  }
+
+
+
+ .H2{
+
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+
+
+  }
+
+
+
+.Content_line{
+
+ position: relative;
+ height: 420px;
+ width: 90%;
+ left: 5%;
+ background-color: skyblue;
+ top: 35px;
+ overflow: auto;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ padding-bottom: 20px;
+ box-sizing: border-box;
+
+
+  }
+
+
+.Content_headline{
+ position: relative;
+ height: 25px;
+ width: 90%;
+ background-color: skyblue;
+ left: 5%;
+ top: 15px;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ 
+
+}
+
+
+.Content{
+
+ height: 30px;
+ width: 80%;
+ background-color: skyblue;;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ text-align: center;
+ margin-top: 20px;
+ margin-left: 10%;
+ box-shadow: 2px 1px 8px 0px black;
+
+ }
+
+
+.A{
+
+  position: relative;
+  top: 5px;
+  text-align: center;
+  text-decoration: none; 
+  color: yellow;
+  font-weight: bold;
+
+  }
+
+
+.Footer_line{
+
+ position: relative;
+ height: 40px;
+ width: 90%;
+ background-color: skyblue;
+ left: 5%;
+ top: 50px;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+
+
+
+
+  }
+
+
+
+.About{
+ position: relative;
+ text-decoration: none;
+ right: -38%;
+ top: 10px;
+ padding:2px 5px;
+ font-weight:bold;
+ color: black;
+ background-color:green;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+  
+  }
+
+ .Author{
+
+ position: relative;
+ text-decoration: none;
+ left: 88%;
+ top: 10px;
+ padding:2px 5px;
+ color: black;
+ background-color:crimson;
+ font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+  
+   }
+
+
+
+.Home{
+ position: relative;
+ text-decoration: none;
+ left: 3%; 
+ top: 10px;
+ padding:2px 5px;
+ color: black;
+ background-color:orange;
+ font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+
+ }
+ 
+
+
+ ul li{
+ list-style: none;
+
+  }
+
+@media screen and (max-width:780px){
+
+.About{
+ position: relative;
+ text-decoration: none;
+ right: -19%;
+ top: 10px;
+ color: black;
+ font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+
+}
+
+ .Author{
+
+ position: relative;
+ text-decoration: none;
+ left: 80%;
+ top: 10px;
+ color: black;
+ background-color:crimson;
+ font-weight:bold;
+ border: 1px solid skyblue;
+ box-shadow:1px 1px 6px black; 
+ box-sizing: border-box;
+ border-radius:15px;
+ padding:2px 5px;
+ cursor: pointer;
+
+   }
+
+
+.Home{
+ position: relative;
+ text-decoration: none;
+ left: -4%; 
+ top: 10px;
+ color: black;
+ background-color:orange;
+  font-weight:bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  padding:2px 5px;
+  cursor: pointer;
+
+ }
+ 
+ 
+
+  }
+
+
+.Golok{
+  position: relative;
+ height: 30px;
+ width: 90%;
+ left: 0%;
+ border-radius: 10px;
+ background-color: skyblue;
+ text-align: center;
+ display: inline-block;
+ box-shadow: 1px 1px  4px black;
+ margin-top: 30px;
+ margin-left: 5%;
+
+ }
+
+.A{
+
+position: relative;
+text-align: center;
+color: brown;
+font-weight: bold;
+text-decoration: none;
+bottom: 5px;
+cursor: pointer;
+
+ }
+
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+ }
+
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+  }
+
+
+
+
+.sidenav a:hover {
+  color: white;
+
+  }
+
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+ }
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+ }
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="Card">
+	
+<div class="Head_line">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+
+
+<div class="Content_headline">
+  <h3 >Home Page</h3>
+</div>
+
+
+
+<div class="Content_line">
+	
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation()" class="A">Part-1</a>
+     </div>
+ </li>
+</ul>
+
+
+
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation2()" class="A">Part-2</a>
+     </div>
+ </li>
+</ul>
+
+
+ <ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation3()" class="A">Part-3</a>
+     </div>
+  </li>
+ </ul>
+
+
+
+ <ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation4()" class="A">Part-4</a>
+     </div>
+ </li>
+ </ul>
+
+
+
+ <ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation5()" class="A">Part-5</a>
+     </div>
+ </li>
+ </ul>
+
+
+
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation6()" class="A">Part-6</a>
+     </div>
+ </li>
+</ul>
+
+
+
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation7()" class="A">Part-7</a>
+     </div>
+ </li>
+</ul>
+
+
+
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation8()" class="A">Part-8</a>
+     </div>
+ </li>
+</ul>
+
+
+
+<ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation9()" class="A">Part-9</a>
+     </div>
+ </li>
+</ul>
+
+
+ <ul>
+  <li>
+      <div class="Golok">
+    <a onclick="ListPageLocation10()" class="A">Part-10</a>
+     </div>
+ </li>
+  </ul>
+
+
+</div>
+
+
+
+
+<div class="Footer_line">
+
+<a class="Author" onclick="Author()">Author</a>	
+<a class="Home" onclick="Back()">Back</a>
+<a class="About" onclick="About()">About</a>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<script>
+
+ function Back(){
+  
+  window.location.href="../index.html";
+
+ }
+
+ function About(){
+  
+  window.location.href="BookSoftwareAbout.html";
+
+ }
+
+ function Author(){
+  
+  window.location.href="BookSoftwareAuthor.html";
+
+ }
+
+
+
+
+//List Page Location;
+
+ function  ListPageLocation(){
+  window.location.href="BookSoftwareList.html";
+
+   }
+
+   function ListPageLocation2(){
+    window.location.href="BookSoftwareList2.html";
+
+  }
+
+  function  ListPageLocation3(){
+  window.location.href="BookSoftwareList3.html";
+
+   }
+
+   function ListPageLocation4(){
+    window.location.href="BookSoftwareList4.html";
+
+  }
+
+  function  ListPageLocation5(){
+  window.location.href="BookSoftwareList5.html";
+
+   }
+
+   function ListPageLocation6(){
+    window.location.href="BookSoftwareList6.html";
+
+  }
+
+  function  ListPageLocation7(){
+  window.location.href="BookSoftwareList7.html";
+
+   }
+
+   function ListPageLocation8(){
+  window.location.href="BookSoftwareList8.html";
+
+  }
+
+ function  ListPageLocation9(){
+  window.location.href="BookSoftwareList9.html";
+
+   }
+
+   function ListPageLocation10(){
+    window.location.href="BookSoftwareList10.html";
+
+  }
+
+
+
+
+ // NavBar Design
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+
+  }
+
+ function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+
+  }
+
+
+</script>
+
+</body>
+</html>

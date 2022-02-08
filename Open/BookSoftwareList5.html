@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masala Book</title>
+
+	<style type="text/css">
+		
+  *{
+  margin: 0;
+  padding: 0;
+
+
+  }
+
+  body{
+background-color: skyblue;
+
+
+  }
+
+
+
+ .Card{
+
+height: 600px;
+width: 100%;
+background-color:skyblue;
+margin-left: 0%;
+margin-top: 0px;
+border: 2px solid skyblue;
+border-radius: 3px ;
+position: fixed;
+
+
+
+  }
+
+  .Head_line{
+  position: relative;
+  height: 42px;
+  width: 100%;
+  background-color: skyblue;
+  border: 2px solid skyblue;
+  box-sizing:border-box;
+  border-radius: 3px ;
+  box-shadow: 1px 1px 8px 0px black;
+
+  }
+
+
+
+ .H2{
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+
+
+  }
+
+
+
+.Content_line{
+ position: relative;
+ height: 420px;
+ width: 90%;
+ left: 5%;
+ overflow: auto;
+ background-color: skyblue;
+ top: 35px;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ padding-bottom: 20px;
+ box-sizing: border-box;
+
+
+  }
+
+
+.Content_headline{
+ position: relative;
+ height: 25px;
+ width: 90%;
+ background-color: skyblue;
+ left: 5%;
+ top: 15px;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+
+
+}
+
+
+.Content{
+ position: relative;
+ height: 30px;
+ width: 80%;
+ overflow: auto;
+ background-color: skyblue;;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ text-align: center;
+ margin-top: 20px;
+ margin-left: 10%;
+
+
+ }
+
+ .Content_Text{
+ position: relative;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ line-height: 30px;
+ word-spacing: 10px;
+ letter-spacing: 1px;
+
+
+
+
+  }
+
+
+
+
+
+.A{
+
+  position: relative;
+  top: 5px;
+  text-align: center;
+  text-decoration: none; 
+  color: yellow;
+  font-weight: bold;
+
+  }
+
+  ul li{
+ list-style: none;
+
+  }
+
+
+.H3{
+
+text-align: center;
+color: hotpink;
+
+ }
+
+.A1{
+  color:blue;
+  font-size: 20px; 
+  text-decoration: underline;
+  cursor: pointer;
+
+ }
+
+
+
+
+
+ .Footer_line{
+
+ position: relative;
+ height: 40px;
+ width: 90%;
+ background-color: skyblue;
+ left: 5%;
+ top: 50px;
+ border: 2px solid skyblue;
+ border-radius: 3px ;
+ 
+
+
+
+  }
+
+
+
+ .About{
+  position: relative;
+  text-decoration: none;
+  right: -38%;
+  top: 10px;
+  padding:2px 5px;
+  color: black;
+  font-weight: bold;
+  background-color:green;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+  
+  }
+
+ .Author{
+
+  position: relative;
+  text-decoration: none;
+  left: 88%;
+  top: 10px;
+  padding:2px 5px;
+  color: black;
+  background-color:crimson;
+  font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+  
+   }
+
+
+
+ .Home{
+  position: relative;
+  text-decoration: none;
+  left: 3%; 
+  top: 10px;
+  padding:2px 5px;
+  color: black;
+  background-color:orange;
+  font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+
+ }
+ 
+
+
+
+
+@media screen and (max-width:780px){
+
+ .About{
+  position: relative;
+  text-decoration: none;
+  right: -19%;
+  top: 10px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  cursor: pointer;
+
+  }
+
+ .Author{
+
+ position: relative;
+ text-decoration: none;
+ left: 80%;
+ top: 10px;
+ color: black;
+ background-color:crimson;
+ font-weight:bold;
+ border: 1px solid skyblue;
+ box-shadow:1px 1px 6px black; 
+ box-sizing: border-box;
+ border-radius:15px;
+ padding:2px 5px;
+ cursor: pointer;
+
+   }
+
+
+ .Home{
+  position: relative;
+  text-decoration: none;
+  left: -4%; 
+  top: 10px;
+  color: black;
+  background-color:orange;
+  font-weight:bold;
+  border: 1px solid skyblue;
+  box-shadow:1px 1px 6px black; 
+  box-sizing: border-box;
+  border-radius:15px;
+  padding:2px 5px;
+  cursor: pointer;
+ 
+
+  }
+ 
+ 
+
+  }
+
+
+
+
+
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+ }
+
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+  }
+
+
+
+
+.sidenav a:hover {
+  color: white;
+
+  }
+
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+ }
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+ }
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="Card">
+	
+<div class="Head_line">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+
+
+<div class="Content_headline">
+  <h2 class="H3"><a onclick="Back()" class="A1" target="_close">Back</a>   1.List Page    <a onclick="Next()" class="A1">Next</a></h2>
+</div>
+
+
+
+<div class="Content_line">
+	
+  
+
+  <div class="Content_Text">
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Nobis quae dolor cumque cum eum fuga veniam totam delectus, 
+earum maxime veritatis beatae consequatur
+aperiam ducimus dicta ullam velit esse labore?
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="Footer_line">
+
+  <a onclick="Author()" class="Author" target="_close">Author</a>	
+  <a onclick="Home()" class="Home" target="_close">Home</a>
+  <a onclick="About()" class="About" target="_close">About</a>
+  
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<script>
+
+
+function Home(){
+  window.location.href="BookSoftwareHome.html";
+
+ }
+
+ function About(){
+  window.location.href="BookSoftwareAbout.html";
+
+ }
+
+ function Author(){
+  window.location.href="BookSoftwareAuthor.html";
+
+ }
+
+
+
+
+ //next back button
+  function Back() {
+   window.location.href="BookSoftwareHome.html";
+
+   }
+
+  function Next() {
+    window.location.href="BookSoftwareList6.html";
+
+   }
+
+
+
+
+ //nav bar
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  }
+
+    
+
+
+  //context menu
+  document.addEventListener("contextmenu",function(event){
+ 
+ event.preventDefault();
+
+   });
+
+
+</script>
+
+</body>
+</html>
